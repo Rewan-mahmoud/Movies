@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ 
+ 
+
+    
+      <section class="sideNav">
+<div id="menu" class="sidemenu">
+
+  <div>
+    <a class="nav-link animation item1" id="now_playing">Now playing</a>
+    <a  class="nav-link animation item2" id="popular" >Popular</a>
+    <a  class="nav-link animation item3" id="top_rated">Top Rated</a>
+    <a  class="animation item4"  id="Trending" >Trending</a>
+    <a class="nav-link animation item5" id="upcoming">Upcoming</a>
+    <a  class="animation item6" href="#Contact">Contact Us</a>
+  </div>
+  <div class="nav-social-item text-white">
+		<a class="text-white mx-2" href="#"><i class="fab fa-facebook-f"></i></a>
+		<a  class="text-white mx-2" href="#"><i class="fab fa-twitter"></i></a>
+		<a class="text-white mx-2 " href="#"><i class="fas fa-globe"></i></a>
+		<div class="pt-3">
+			<span>Copyright Â© 2019 All Rights Reserved.</span>
+		</div>
+		
+	</div>
+</div>
+   
+       <div id="iconBox" class="icon ">
+        <div class="logo"> <img src="image/logo.png" class="w-100" alt=""></div>
+            <span><i id="mainbox" class="fa-solid fa-bars"></i> </span>
+            <span  class="size"><i class="fas fa-globe "></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </span>
+        </div>
+        </section>
+
+        <div class="container w-75 ms-auto">
+          <div class="row pt-5">
+            <div class="col-md-6">
+              <input class=" form-control text-center" id="searchInput" type="text" placeholder="get movies by word...">
+            </div>
+            <div class="col-md-6">
+              <input class=" form-control  text-center" id="search"  type="text" placeholder="search...">
+            </div>
+          </div>
+        </div>
+        <section class="Movies">
+          <div class="container mt-5">
+            <div class="row  gy-4" id="displayRows">
+            </div>
+          </div>
+        </section>
+        
+        <div class="contactUs p-5" id="Contact">
+          <div class="container mt-2">
+            <h2 class="text-white mb-3">ContacUs...</h2>
+            <div class="row ">
+              <div class="col-md-6 mb-3">
+                <input class="form-input w-100 form-control text-center " id="nameInput" placeholder="Enter your name" type="text">
+                <div class="alert alert-danger d-none" id="namealert" role="alert">
+                  Your Name is not valid
+                </div>
+              </div>
+            
+              <div class="col-md-6 mb-3 ">
+                <input class="form-input w-100 form-control text-center  " id="emailInput" placeholder="Enter Email"type="text">
+                <div class="alert alert-danger d-none" id="emailalert" role="alert" >
+                  entre valid email
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <input class="form-input w-100 form-control text-center" id="phoneInput" placeholder="Enter phone" type="tel">
+                <div class="alert alert-danger d-none" id="phoneAlert" role="alert" >
+                  entre valid phone
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <input class="form-input w-100 form-control text-center" id="ageInput" placeholder="Enter Age"type="text">
+                <div class="alert alert-danger d-none" id="ageAlert" role="alert" >
+                  entre valid Age
+                </div>
+              </div>
+              <div class="col-md-6">
+                <input class="form-input w-100 form-control text-center " id="passInput" placeholder="Enter Password" type="text">
+                <div class="alert alert-danger d-none" id="passAlert" role="alert" >
+                  enter valid password *Minimum eight characters, at least one letter and one number:*
+                </div>
+              </div>
+              <div class="col-md-6">
+                <input class="form-input w-100 form-control text-center"id="RepasswordInput" placeholder="Enter RePassword" type="text">
+                <div class="alert alert-danger d-none" id="repasswordAlert" role="alert" style="display: none;">
+                  your password not matched
+                </div>
+              
+              </div>
+
+            </div>
+            <button type="submit" disabled="" id="submitBtn" class="btn btn-outline-danger mt-3">Submit</button>
+          </div>
+        </div>
+        
+          
+
+      <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

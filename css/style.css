@@ -1,0 +1,107 @@
+body{
+    height: 500vh;
+    font-family: 'Segoe UI Light', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+
+}
+
+/* .....................SideNav................ */
+.icon{
+    display:grid;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100vh;
+    z-index: 55555555;
+    background-color: #f8f6f6;
+    text-align: center;
+    transition: all 0.6s ease;
+    font-size: 30px;
+    padding: 1rem;
+    margin-left: 0px;
+cursor: pointer;
+  
+}
+.nav-social-item{
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+}
+
+   .sidemenu{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    background-color: black;
+    z-index: 1;
+   height: 100vh;
+  padding-top: 1rem;
+    overflow: hidden;
+    transition: all .5s;
+  
+    
+} 
+
+.size i {
+    font-size: 17px;
+}
+
+.animation {
+    color: #f9f6f6;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 8px 8px 8px 50px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    opacity: 0;
+    
+   } 
+
+.animation:hover{
+    color: #ff655c;
+   }
+   .nav-social-item i{
+    transition: all 0.3s;
+   }
+   .nav-social-item i:hover{
+    color: #ff655c;
+  
+   }
+   /* ............................................... */
+.form-control{
+    background-color: transparent !important;
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,.7);
+    border-radius: 0;
+    color: #fff;
+    font-weight: 800;
+}
+/* .......................................... */
+
+.layer{
+ top: 100%;
+ bottom: 0;
+ left: 0;
+ right:0;
+ background-color: rgba(255,255,255,.7);
+ transition: 1.2s all ;
+ -webkit-transition: 1.2s all ;
+ -moz-transition: 1.2s all ;
+ -ms-transition: 1.2s all ;
+ -o-transition: 1.2s all ;
+}
+.item:hover .layer
+{
+    top: 0;
+ bottom: 0;
+ left: 0;
+ right:0;
+
+}
+/* mouseenter */
+/* $(this).css("background-color", "green"); */
